@@ -3,17 +3,17 @@ package UML.game;
 public abstract class Person {
 
 
-     int strength = 5;
-     int protection = 5;
-     int agility = 5;
-     int skill = 5;
-     int health = 5;
-     int dopStrength = 0;
-     int dopProtection = 0;
-     int dopAgility = 0;
-     int dopSkill = 0;
-     int dopHealth = 0;
-
+    int strength = 5;
+    int protection = 5;
+    int agility = 5;
+    int skill = 5;
+    int health = 5;
+    int dopStrength = 0;
+    int dopProtection = 0;
+    int dopAgility = 0;
+    int dopSkill = 0;
+    int dopHealth = 0;
+    Armor armor;
 
 
     public int getStrength() {

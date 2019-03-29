@@ -1,10 +1,18 @@
 package UML.game;
 
-public class Hero  extends Person{
+public class Hero extends Person {
 
     private static int id = 0;
     String name = "";
     int idHero = 0;
+
+    public int getMoney() {
+        return money;
+    }
+
+    int money = 500;
+
+
 
 
     public Hero(String name, int strength, int protection, int agility, int skill, int health) {
@@ -20,8 +28,8 @@ public class Hero  extends Person{
         id++;
     }
 
-    public void setArmor(Armor a) {
-
+    public void setArmor(Armor a)  { // установка брони
+        armor = a;
         dopStrength += a.getStrength();
         dopProtection += a.getProtection();
         dopAgility += a.getAgility();
@@ -48,6 +56,7 @@ public class Hero  extends Person{
                 agility, dopAgility,
                 skill, dopSkill,
                 health, dopHealth);
+        System.out.println("Money: " + money);
     }
 
     @Override
@@ -68,9 +77,11 @@ public class Hero  extends Person{
     public String getName() {
         return name;
     }
+
     public int getIdHero() {
         return idHero;
     }
+
     public Hero() {
     }
 }
